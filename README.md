@@ -18,7 +18,7 @@ If you are a Bigquery developer, you should already have the `gcloud` tool insta
 #### Bigquery authentication
 
 There are 2 possible ways to authenticate locally to your Bigquery account: 
-- Install [GCloud cli](https://cloud.google.com/sdk/docs/downloads-interactive) + `gcloud auth application-default login`
+- Install and init [GCloud cli](https://cloud.google.com/sdk/docs/downloads-interactive) + `gcloud auth application-default login`
 - Use a service account when you start the server, using the env variable `GOOGLE_APPLICATION_CREDENTIALS=<PATH TO YOUR SERVICE ACCOUNT JSON FILE>`
 
 ```
