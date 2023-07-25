@@ -57,6 +57,11 @@ The open BETA phase will enable us to improve the product and determine together
 
 ## Release note
 
+### v0.2.0-beta 🍇️
+
+- Add a monthly report dashboard
+- Redesign home /
+
 ### v0.1.0-beta 🍓
 
 First version:
