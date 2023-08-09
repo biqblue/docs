@@ -55,6 +55,10 @@ However, the analysis requests made may generate Analysis costs in Bigquery (the
 
 The open BETA phase will enable us to improve the product and determine together a fair and win-win pricing model 💪.
 
+## Screenshots
+
+<img src="https://biqguery.com/img/screenshots/root.webp" height="200"> <img src="https://biqguery.com/img/screenshots/monthly-report.webp" height="200"> <img src="https://biqguery.com/img/screenshots/savings.webp" height="200"> <img src="https://biqguery.com/img/screenshots/compute-service.webp" height="200"> <img src="https://biqguery.com/img/screenshots/compute-user.webp" height="200"> <img src="https://biqguery.com/img/screenshots/slot-reservations.webp" height="200"> <img src="https://biqguery.com/img/screenshots/queries.webp" height="200"> <img src="https://biqguery.com/img/screenshots/storage-overview.webp" height="200"> <img src="https://biqguery.com/img/screenshots/storage-usage.webp" height="200"> <img src="https://biqguery.com/img/screenshots/storage-dataset.webp" height="200"> <img src="https://biqguery.com/img/screenshots/tables.webp" height="200">
+
 ## Release note
 
 ### v0.2.0-beta 🍇️
