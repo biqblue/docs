@@ -55,6 +55,12 @@ However, the analysis requests made may generate Analysis costs in Bigquery (the
 
 The open BETA phase will enable us to improve the product and determine together a fair and win-win pricing model 💪.
 
+## Setup GCP pricing
+
+To match your GCP billing console the clostest as possible, you have customize the price of each service. Pricing details are provided by GCP [here](https://cloud.google.com/skus). By default we use the pricing for the US region and Enterprise Bigquery Editions.
+
+Simply add the file `config.json` in the root directory of the app.
+
 ## Screenshots
 
 <img src="https://biqguery.com/img/screenshots/root.webp" height="200"> <img src="https://biqguery.com/img/screenshots/monthly-report.webp" height="200"> <img src="https://biqguery.com/img/screenshots/savings.webp" height="200"> <img src="https://biqguery.com/img/screenshots/compute-service.webp" height="200"> <img src="https://biqguery.com/img/screenshots/compute-user.webp" height="200"> <img src="https://biqguery.com/img/screenshots/slot-reservations.webp" height="200"> <img src="https://biqguery.com/img/screenshots/queries.webp" height="200"> <img src="https://biqguery.com/img/screenshots/storage-overview.webp" height="200"> <img src="https://biqguery.com/img/screenshots/storage-usage.webp" height="200"> <img src="https://biqguery.com/img/screenshots/storage-dataset.webp" height="200"> <img src="https://biqguery.com/img/screenshots/tables.webp" height="200">
