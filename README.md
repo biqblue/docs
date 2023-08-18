@@ -49,23 +49,61 @@ I'm easy to set up and I'm secure 🔓.
 
 ### Cost
 
-I'm in an open BETA development phase, 100% free during this period.
+Presently, I exist within an open BETA stage of development. Throughout this interval, full cost exemption is in effect.
 
-However, the analysis requests made may generate Analysis costs in Bigquery (the latest measurements show a cost of less than 0.1% of the total Bigquery bill).
+It is important to note that the analytical queries executed might incur Analysis expenses within Bigquery. Based on recent assessments, these expenses amount to less than 0.1% of the overall Bigquery invoice.
 
-The open BETA phase will enable us to improve the product and determine together a fair and win-win pricing model 💪.
+The ongoing open BETA phase serves a dual purpose: refining the product and collaboratively devising an equitable and mutually beneficial pricing structure 💪.
 
 ## Setup GCP pricing
 
-To match your GCP billing console the clostest as possible, you have customize the price of each service. Pricing details are provided by GCP [here](https://cloud.google.com/skus). By default we use the pricing for the US region and Enterprise Bigquery Editions.
+To attain the highest feasible resemblance to your GCP billing console, it is imperative to tailor the pricing of each individual service. Elucidations concerning pricing are made available by GCP via this [link](https://cloud.google.com/skus). The default course of action entails utilization of pricing applicable to the US region and Enterprise Bigquery Editions.
 
-Simply add the file `config.json` in the root directory of the app.
+Execution is straightforward: introduce the file named `config.json` into the principal directory of the application.
+
+## Temporary tables VS non-temporary tables
+
+### CREATE TEMP TABLE
+
+By default, I initiate temporary tables within your Bigquery account, affording the subsequent advantages:
+- Rows are precomputed to enhance performance efficiency.
+- Permanent traces are absent; tables remain extant for a duration of 24 hours.
+- There exists no necessity to possess a `CREATE` privilege pertaining to a designated dataset.
+
+This indeed represents the most straightforward approach to commence proceedings.
+
+### CREATE OR REPLACE TABLE
+
+Please provide distinct values for the environment variables labeled as `BIQGUERY_PROJECT` and `BIQGUERY_DATASET`. These values are crucial for directing the storage location of tables to a predetermined dataset. 
+
+A prerequisite is that the intended dataset should already exist within the system. Furthermore, ensure that the project aligns with the ongoing project configuration as established through either the 'gcloud' environment or the active service account.
+
+Advantages stemming from the utilization of tables that are not temporary in nature encompass the following:
+- Prolonged persistence of tables exceeding a 24-hour duration.
+- Facilitation of query sharing among different users, permitting the creation of customized analyses based on these shared tables.
+
+On MacOS/Linux
+```
+ BIQGUERY_PROJECT=my-project BIQGUERY_DATASET=my-dataset ./biqguery-app-macos-arm64
+```
+
+On Windows
+```
+ $env:BIQGUERY_PROJECT=my-project ; $env:BIQGUERY_DATASET=my-dataset ; .\biqguery-app-win-x64.exe
+```
 
 ## Screenshots
 
 <img src="https://biqguery.com/img/screenshots/root.webp" height="200"> <img src="https://biqguery.com/img/screenshots/monthly-report.webp" height="200"> <img src="https://biqguery.com/img/screenshots/savings.webp" height="200"> <img src="https://biqguery.com/img/screenshots/compute-service.webp" height="200"> <img src="https://biqguery.com/img/screenshots/compute-user.webp" height="200"> <img src="https://biqguery.com/img/screenshots/slot-reservations.webp" height="200"> <img src="https://biqguery.com/img/screenshots/queries.webp" height="200"> <img src="https://biqguery.com/img/screenshots/storage-overview.webp" height="200"> <img src="https://biqguery.com/img/screenshots/storage-usage.webp" height="200"> <img src="https://biqguery.com/img/screenshots/storage-dataset.webp" height="200"> <img src="https://biqguery.com/img/screenshots/tables.webp" height="200">
 
 ## Release note
+
+### v0.2.10-beta 🍎
+
+- Add option to use non-temporary tables
+- Fix updater
+- Fix analysis
+- Setup custom pricing
 
 ### v0.2.0-beta 🍇️
 
