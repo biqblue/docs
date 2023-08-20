@@ -76,7 +76,7 @@ This indeed represents the most straightforward approach to commence proceedings
 
 Please provide distinct values for the environment variables labeled as `BIQGUERY_PROJECT` and `BIQGUERY_DATASET`. These values are crucial for directing the storage location of tables to a predetermined dataset. 
 
-A prerequisite is that the intended dataset should already exist within the system. Furthermore, ensure that the project aligns with the ongoing project configuration as established through either the 'gcloud' environment or the active service account.
+A prerequisite is that the intended dataset **should already exist within the system**. Furthermore, ensure that the project aligns with the ongoing project configuration as established through either the 'gcloud' environment or the active service account.
 
 Advantages stemming from the utilization of tables that are not temporary in nature encompass the following:
 - Prolonged persistence of tables exceeding a 24-hour duration.
