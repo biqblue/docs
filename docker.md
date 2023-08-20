@@ -1,6 +1,6 @@
-# Setup Docker version
+# Docker Quick Setup
 
-## For users
+## Prerequisites
 
 You need a GCP service-account with the following access rights:
 ```
@@ -10,9 +10,9 @@ You need a GCP service-account with the following access rights:
 - roles/bigquery.user
 ```
 
-If you want to see everything, get a service-account at organization level.
+If you want to see everything, get a service-account **at organization level**.
 
-### You are 1
+## You are 1
 
 You have Docker installed on your computer, here the easiest way to start. You only need to specify the path to the GCP service-account file `/path.to/credentials.json`.
 
@@ -23,7 +23,7 @@ docker run -p 3000:3000 -v /path.to/credentials.json:/app/credentials.json biqgu
 
 Biq should be available at http://localhost:3000.
 
-### You are a team
+## You are a team
 
 Here the best configuration for a team.
 
@@ -73,7 +73,7 @@ services:
 - Specify the GCP service-account credentials file
 - Specify the [pricing](https://github.com/biqguery/docs/blob/main/README.md#setup-gcp-pricing) `config.json` to use
 - Specify the Bigquery project `my-project` and the dataset `my-dataset` to store Biq Guery [tables](https://github.com/biqguery/docs/blob/main/README.md#temporary-tables-vs-non-temporary-tables)
-- Add a load balancer to dispatch routes on both service
+- Add a load balancer to dispatch routes on both services
 
 Start 1 master and 1 slave
 
