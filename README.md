@@ -33,9 +33,9 @@ IAM Roles you need:
 You need to unrestrict the ExecutionPolicy
 https://learn.microsoft.com/fr-fr/troubleshoot/azure/active-directory/cannot-run-scripts-powershell
 
-#### Docker
+#### Docker 🐳
 
-> 💡 Soon Docker version will be deployable on your infrastructure, so you can make it easily accessible to all your collaborators. This version is perfect for teamwork.
+A Docker iteration is deployable within your infrastructure, facilitating accessible availability to all collaborators. This specific rendition proves optimal for collaborative endeavors. Follow the procedure [here](https://github.com/biqguery/docs/blob/main/docker.md).
 
 ## How does it work?
 
