@@ -98,6 +98,11 @@ On Windows
 
 ## Release note
 
+### v0.2.11-beta 🫐
+
+- Update data every hour, in background
+- Add Slack [alerting](https://github.com/biqguery/docs/blob/main/docker.md)
+
 ### v0.2.10-beta 🍎
 
 - Add option to use non-temporary tables
