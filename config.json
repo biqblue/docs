@@ -1,5 +1,6 @@
 {
 	"currency": "$",
+	"daily_limit": 15,
 	"pricings": [{
 			"starting": "1970-01-01",
 			"compute": 5.0,
