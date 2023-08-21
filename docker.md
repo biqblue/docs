@@ -31,7 +31,7 @@ Here the best configuration for a team.
 docker pull biqguery
 ```
 
-Create `docker-compose.yml` file.
+Create a `docker-compose.yml` file.
 
 ```yml
 version: '3'
@@ -72,6 +72,8 @@ services:
   # add a load balancer
   # ...
 ```
+
+**Configure the `docker-compose.yml` file**
 
 - Create 1 master, in charge of updating data with `MASTER=true`
 - Create as many slave as you need (⚠️ You **must** set `MASTER=false`, Otherwise, each slave will analyze the JOBS tables, resulting in high costs)
