@@ -43,8 +43,11 @@ services:
     image: biqguery
     environment:
       - MASTER=true
+      - OPEN_URL=false
       - BIQGUERY_PROJECT=my-project
       - BIQGUERY_DATASET=my-dataset
+      - SLACK_WEBHOOK_URL=your-slack-webhook
+      - CLIENT_ROOT=root-of-your-deployment
     ports:
       - "3000:3000"
     volumes:
@@ -55,6 +58,8 @@ services:
   slave:
     image: biqguery
     environment:
+      - MASTER=false
+      - OPEN_URL=false
       - BIQGUERY_PROJECT=my-project
       - BIQGUERY_DATASET=my-dataset
     ports:
@@ -68,12 +73,13 @@ services:
   # ...
 ```
 
-- Create 1 master, in charge of updating data (MASTER=true)
-- Create as many slave as you need
+- Create 1 master, in charge of updating data with `MASTER=true`
+- Create as many slave as you need (⚠️ You **must** set `MASTER=false`, Otherwise, each slave will analyze the JOBS tables, resulting in high costs)
 - Specify the GCP service-account credentials file
 - Specify the [pricing](https://github.com/biqguery/docs/blob/main/README.md#setup-gcp-pricing) `config.json` to use
 - Specify the Bigquery project `my-project` and the dataset `my-dataset` to store Biq Guery [tables](https://github.com/biqguery/docs/blob/main/README.md#temporary-tables-vs-non-temporary-tables)
 - Add a load balancer to dispatch routes on both services
+- Set the Slack webhook url in `SLACK_WEBHOOK_URL` and set `CLIENT_ROOT` with your internal root url (default is `http://localhost:3000`)
 
 Start 1 master and 1 slave
 
@@ -82,3 +88,5 @@ docker-compose up --scale slave=1
 ```
 
 Biq should be available at http://localhost:3000.
+
+⚠️ Once again, slave configuration must be `MASTER=false`! 
