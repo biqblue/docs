@@ -40,7 +40,7 @@ version: '3'
 # others are slaves, they just run the app: you can scale them as you want
 services:
   master:
-    image: biqguery
+    image: biqguery/biqguery:latest
     environment:
       - MASTER=true
       - OPEN_URL=false
@@ -56,7 +56,7 @@ services:
       - /path.to/config.json:/app/config.json
 
   slave:
-    image: biqguery
+    image: biqguery/biqguery:latest
     environment:
       - MASTER=false
       - OPEN_URL=false
