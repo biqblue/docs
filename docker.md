@@ -17,7 +17,7 @@ If you want to see everything, get a service-account **at organization level**.
 You have Docker installed on your computer, here the easiest way to start. You only need to specify the path to the GCP service-account file `/path.to/credentials.json`.
 
 ```sh
-docker pull biqguery
+docker pull biqguery/biqguery
 docker run -p 3000:3000 -v /path.to/credentials.json:/app/credentials.json biqguery
 ```
 
@@ -28,7 +28,7 @@ Biq should be available at http://localhost:3000.
 Here the best configuration for a team.
 
 ```sh
-docker pull biqguery
+docker pull biqguery/biqguery
 ```
 
 Create a `docker-compose.yml` file.
