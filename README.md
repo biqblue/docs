@@ -35,7 +35,7 @@ https://learn.microsoft.com/fr-fr/troubleshoot/azure/active-directory/cannot-run
 
 #### Docker 🐳
 
-A Docker iteration is deployable within your infrastructure, facilitating accessible availability to all collaborators. This specific rendition proves optimal for collaborative endeavors. Follow the procedure [here](https://github.com/biqguery/docs/blob/main/docker.md).
+A Docker iteration is deployable within your infrastructure, facilitating accessible availability to all collaborators. This specific rendition proves optimal for collaborative endeavors. Follow the procedure on [Docker Hub](https://hub.docker.com/r/biqguery/biqguery).
 
 ## How does it work?
 
