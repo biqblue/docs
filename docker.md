@@ -41,6 +41,7 @@ services:
     image: biqguery/biqguery:latest
     environment:
       - MASTER=true
+      - SELF_UPDATE=false
       - OPEN_URL=false
       - BIQGUERY_PROJECT=my-project
       - BIQGUERY_DATASET=my-dataset
@@ -57,6 +58,7 @@ services:
     image: biqguery/biqguery:latest
     environment:
       - MASTER=false
+      - SELF_UPDATE=false
       - OPEN_URL=false
       - BIQGUERY_PROJECT=my-project
       - BIQGUERY_DATASET=my-dataset
@@ -76,6 +78,8 @@ services:
 | Environment | Value | Description  |
 |---|---|---|
 | MASTER | true/false | ⚠️ You can have only 1 master ⚠️ |
+| SELF_UPDATE | false | Server version should never try to update itself, setup [rolling update](https://github.com/biqguery/docs/blob/main/docker.md#setup-automatic-updates) instead |
+| OPEN_URL | false | Server version should never try to open a web browser |
 | BIQGUERY_PROJECT | my-project | GCP Bigquery project |
 | BIQGUERY_DATASET | my-dataset | GCP Bigquery dataset where to store Biq [tables](https://github.com/biqguery/docs/blob/main/README.md#temporary-tables-vs-non-temporary-tables) |
 | CLIENT_ROOT | https://my-internal-url.com | Root url of the client |
