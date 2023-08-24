@@ -91,10 +91,10 @@ The master is in charge of refreshing and processing the data, there can only be
 
 ### Files
 
-| Files | Value | Description  |
-|---|---|---|
-| credentials.json | GCP service-account  | Access to Bigquery |
-| config.json | [Pricing](https://github.com/biqguery/docs/blob/main/README.md#setup-gcp-pricing) configuration | Configure the pricing of Bigquery according to the SKU you are using |
+| Files | Description  |
+|---|---|
+| credentials.json | GCP service-account to access to Bigquery |
+| config.json | Configure the [pricing](https://github.com/biqguery/docs/blob/main/README.md#setup-gcp-pricing) of Bigquery according to the SKU you are using |
 
 Add these files at the root folder of the app `/app/`.
 
