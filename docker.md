@@ -1,5 +1,7 @@
 # Docker Quick Setup
 
+Biq Guery is available on [Docker Hub](https://hub.docker.com/r/biqguery/biqguery).
+
 ## Prerequisites
 
 You need a GCP service-account with the following access rights:
