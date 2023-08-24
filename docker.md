@@ -83,6 +83,8 @@ services:
 
 ⚠️ You **must** have only 1 `MASTER=true`, then you could have as many slave `MASTER=false` as you want. Having multiple master will result in high costs, so be careful!
 
+The master is in charge of refreshing and processing the data, there can only be one.
+
 ### Files
 
 | Files | Value | Description  |
@@ -104,11 +106,13 @@ Biq should be available at http://localhost:3000.
 
 ### Setup a load balancer
 
-Do as usual, but we strongly recommend to host Biq Guery **only in your private network**. ⚠️ Do not host Biq Guery on public endpoints.
+Do as usual, but we strongly recommend to host Biq Guery **only in your private network**.
 
-### Automatic update
+⚠️ Do not host Biq Guery on public endpoints.
 
-Biq Guery is updated several times a week; to always benefits of the last features just setup a rolling update with your orchestrator.
+### Setup automatic updates
+
+Biq Guery is updated several times a week; to always benefits of the last features & fix, just setup a rolling update with your orchestrator.
 
 Some examples:
 - Kubernetes [rolling update](https://kubernetes.io/docs/tutorials/kubernetes-basics/update/update-intro/)
