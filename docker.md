@@ -29,10 +29,6 @@ Biq should be available at http://localhost:3000.
 
 Here the best configuration for a team.
 
-```sh
-docker pull biqguery/biqguery
-```
-
 Create a `docker-compose.yml` file.
 
 ```yml
@@ -75,17 +71,28 @@ services:
   # ...
 ```
 
-**Configure the `docker-compose.yml` file**
+### Environment
 
-- Create 1 master, in charge of updating data with `MASTER=true`
-- Create as many slave as you need (⚠️ You **must** set `MASTER=false`, Otherwise, each slave will analyze the JOBS tables, resulting in high costs)
-- Specify the GCP service-account credentials file
-- Specify the [pricing](https://github.com/biqguery/docs/blob/main/README.md#setup-gcp-pricing) `config.json` to use
-- Specify the Bigquery project `my-project` and the dataset `my-dataset` to store Biq Guery [tables](https://github.com/biqguery/docs/blob/main/README.md#temporary-tables-vs-non-temporary-tables)
-- Add a load balancer to dispatch routes on both services
-- Set the Slack webhook url in `SLACK_WEBHOOK_URL` and set `CLIENT_ROOT` with your internal root url (default is `http://localhost:3000`)
+| Environment | Value | Description  |
+|---|---|---|
+| MASTER | true/false | ⚠️ You can have only 1 master ⚠️ |
+| BIQGUERY_PROJECT | my-project | GCP Bigquery project |
+| BIQGUERY_DATASET | my-dataset | GCP Bigquery dataset where to store Biq [tables](https://github.com/biqguery/docs/blob/main/README.md#temporary-tables-vs-non-temporary-tables) |
+| CLIENT_ROOT | https://my-internal-url.com | Root url of the client |
+| SLACK_WEBHOOK_URL | https://hooks.slack.com/services/AAA | Slack web hook to get notifications directly in Slack |
 
-Start 1 master and 1 slave
+⚠️ You **must** have only 1 `MASTER=true`, then you could have as many slave `MASTER=false` as you want. Having multiple master will result in high costs, so be careful!
+
+### Files
+
+| Files | Value | Description  |
+|---|---|---|
+| credentials.json | GCP service-account  | Access to Bigquery |
+| config.json | [Pricing](https://github.com/biqguery/docs/blob/main/README.md#setup-gcp-pricing) configuration | Configure the pricing of Bigquery according to the SKU you are using |
+
+Add these files at the root folder of the app `/app/`.
+
+### Example: Start 1 master and 1 slave
 
 ```sh
 docker-compose up --scale slave=1
@@ -93,4 +100,18 @@ docker-compose up --scale slave=1
 
 Biq should be available at http://localhost:3000.
 
-⚠️ Once again, slave configuration must be `MASTER=false`! 
+⚠️ Once again, slave configuration must be `MASTER=false`!
+
+### Setup a load balancer
+
+Do as usual, but we strongly recommend to host Biq Guery **only in your private network**. ⚠️ Do not host Biq Guery on public endpoints.
+
+### Automatic update
+
+Biq Guery is updated several times a week; to always benefits of the last features just setup a rolling update with your orchestrator.
+
+Some examples:
+- Kubernetes [rolling update](https://kubernetes.io/docs/tutorials/kubernetes-basics/update/update-intro/)
+- Swarm [rolling update](https://docs.docker.com/engine/swarm/swarm-tutorial/rolling-update/)
+
+
