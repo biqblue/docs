@@ -98,6 +98,10 @@ On Windows
 
 ## Release note
 
+### v0.2.14 🥝
+
+- Simple and better version update for MacOS, Linux, Windows and Docker
+
 ### v0.2.11-beta 🫐
 
 - Update data every hour, in background
