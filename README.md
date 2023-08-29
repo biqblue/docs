@@ -104,6 +104,10 @@ Setup `project` and `dataset` keys in the `~/.biq/config.json`. Default file is 
 
 ## Release note
 
+### v0.2.17 🍏
+
+- Add Users analysis
+
 ### v0.2.14 🥝
 
 - Simple and better version update for MacOS, Linux, Windows and Docker
