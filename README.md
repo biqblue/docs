@@ -59,7 +59,7 @@ The ongoing open BETA phase serves a dual purpose: refining the product and coll
 
 To attain the highest feasible resemblance to your GCP billing console, it is imperative to tailor the pricing of each individual service. Elucidations concerning pricing are made available by GCP via this [link](https://cloud.google.com/skus). The default course of action entails utilization of pricing applicable to the US region and Enterprise Bigquery Editions.
 
-Execution is straightforward: introduce the file named `config.json` into the principal directory of the application.
+Execution is straightforward: introduce the file named `config.json` into your user home directory `~/.biq/config.json`. Default file is available [here](https://github.com/biqguery/docs/blob/main/config.json).
 
 ## Temporary tables VS non-temporary tables
 
@@ -82,6 +82,8 @@ Advantages stemming from the utilization of tables that are not temporary in nat
 - Prolonged persistence of tables exceeding a 24-hour duration.
 - Facilitation of query sharing among different users, permitting the creation of customized analyses based on these shared tables.
 
+#### Using environment variables
+
 On MacOS/Linux
 ```
  BIQGUERY_PROJECT=my-project BIQGUERY_DATASET=my-dataset ./biqguery-app-macos-arm64
@@ -91,6 +93,10 @@ On Windows
 ```
  $env:BIQGUERY_PROJECT=my-project ; $env:BIQGUERY_DATASET=my-dataset ; .\biqguery-app-win-x64.exe
 ```
+
+#### Using `config.json`
+
+Setup `project` and `dataset` keys in the `~/.biq/config.json`. Default file is available [here](https://github.com/biqguery/docs/blob/main/config.json).
 
 ## Screenshots
 
