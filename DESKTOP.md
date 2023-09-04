@@ -7,6 +7,10 @@ First, download your binaries on [biqguery.com](https://biqguery.com#download).
 - On Windows, unzip the `.exe` file and double click on it
 - On Linux, unzip the file and start it from a terminal
 
+#### ⚠️ Required on Windows
+- You need to [unrestrict the ExecutionPolicy](https://learn.microsoft.com/fr-fr/troubleshoot/azure/active-directory/cannot-run-scripts-powershell)
+- On Windows 11, you may need to "unblock" the app
+
 Your web browser should open the setup page.
 
 <img width="1207" alt="263542524-eabfe531-f723-4349-b88a-ff80895eb0c1" src="https://github.com/biqguery/docs/assets/134798784/e39074c6-eb3d-4c1c-a87a-eb8914d09d65">
@@ -28,6 +32,11 @@ IAM Roles you need:
 ```
 
 When it is done, restart the app, and you should see 3 green ✔️, meaning you're good to go! 🥳
+
+### Advanced setup (optional)
+
+Go to [advanced setup](https://github.com/biqguery/docs/blob/main/ADVANCED_SETUP.md)https://github.com/biqguery/docs/blob/main/ADVANCED_SETUP.md.
+
 
 
 
