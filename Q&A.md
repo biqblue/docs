@@ -20,4 +20,4 @@ The ongoing open BETA phase has two main objectives: improving the product and w
 
 ### 🔓 Do you see my data or my queries?
 
-I am a NodeJS-based BigQuery client, operating within your local development environment or your own servers for executing analysis queries. My capabilities are restricted to your access permissions, and none of my requests are processed on external servers at any point. Everything works only on your machine or server. I do collect some basics statistics, here the [list](https://biqguery.com/privacy#statistics).
+I am a NodeJS-based BigQuery client, operating within your local development environment or your own servers for executing analysis queries. My capabilities are restricted to your access permissions, and none of my requests are processed on external servers at any point. Everything works only on your machine or server. For future billing purpose, I do collect some basics statistics, here the [list](https://biqguery.com/privacy#statistics).
