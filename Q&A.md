@@ -12,7 +12,7 @@ Nevertheless, it is essential to acknowledge that this user-friendly nature carr
 
 ### 💰 How much does it cost?
 
-Currently, I am in an open BETA stage of development. During this period, there is no cost associated with using the service.
+Currently, I am in an open BETA stage of development. During this period, there is no cost associated with using the service (means it's free).
 
 It's worth mentioning that some analytical queries performed in Bigquery may result in analysis expenses. These expenses typically make up less than 0.1% of the total Bigquery bill.
 
