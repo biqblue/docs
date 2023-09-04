@@ -31,6 +31,12 @@ IAM Roles you need:
 - roles/bigquery.user
 ```
 
+#### Using a service account
+
+Simply set the environemnt variable `GOOGLE_APPLICATION_CREDENTIALS` to the path to your service-account json file.
+
+### Restart
+
 When it is done, restart the app, and you should see 3 green ✔️, meaning you're good to go! 🥳
 
 ### Advanced setup (optional)
