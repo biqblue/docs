@@ -35,7 +35,7 @@ When it is done, restart the app, and you should see 3 green ✔️, meaning you
 
 ### Advanced setup (optional)
 
-Go to [advanced setup](https://github.com/biqguery/docs/blob/main/ADVANCED_SETUP.md)https://github.com/biqguery/docs/blob/main/ADVANCED_SETUP.md.
+Go to [advanced setup](https://github.com/biqguery/docs/blob/main/ADVANCED_SETUP.md).
 
 
 
