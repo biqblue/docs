@@ -7,7 +7,7 @@ I am an efficient Google BigQuery explorer dedicated to optimizing costs and per
 🖐️ The easiest way to try is probably to use the desktop version. If you're a Bigquery developer, you've already installed gcloud or a service account.
 
 ## Quick start
-- You want to configure the MacOS, Windows or Linux version? Then go to the [desktop version setup](https://github.com/biqguery/docs/blob/main/DESKTOP.md)
+- You want to install the MacOS, Windows or Linux version? Then go to the [desktop version setup](https://github.com/biqguery/docs/blob/main/DESKTOP.md)
 - You want to install the Docker version? Then go to [Docker Hub](https://hub.docker.com/r/biqguery/biqguery)
 - You have questions? Then go to [Q&A](https://github.com/biqguery/docs/blob/main/Q%26A.md).
 
