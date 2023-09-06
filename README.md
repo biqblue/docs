@@ -17,6 +17,10 @@ I am an efficient Google BigQuery explorer dedicated to optimizing costs and per
 
 ## Release note
 
+### v0.2.25 🍋
+
+- Add current month analysis
+
 ### v0.2.17 🍏
 
 - Add Users analysis
