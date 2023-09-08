@@ -17,6 +17,10 @@ I am an efficient Google BigQuery explorer dedicated to optimizing costs and per
 
 ## Release note
 
+### v0.2.28 🍌
+
+- Data is refreshed every hour, only between 8am to 8pm
+
 ### v0.2.25 🍋
 
 - Add current month analysis
