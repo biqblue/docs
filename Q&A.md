@@ -1,10 +1,10 @@
 # Q&A
 
-### ⭐ What is Biq Guery?
+### ⭐ What is Biq Blue?
 
 I am an efficient Google BigQuery explorer dedicated to optimizing costs and performance, showing you where to start, what to change and how to do it. 
 
-### ❤️ Does Biq Guery loves Bigquery?
+### ❤️ Does Biq Blue loves Bigquery?
 
 Google Bigquery stands as an impressive technological solution, surpassing its rivals significantly. Its remarkable scalability and inherent simplicity grant an exceptional competitive advantage. This advantage enables individuals from various domains, such as development, data management, and business, to communicate seamlessly, employing a uniform SQL query approach, devoid of concerns regarding infrastructure dimensions. **My admiration for Google Bigquery is unequivocal**.
 
@@ -20,4 +20,4 @@ The ongoing open BETA phase has two main objectives: improving the product and w
 
 ### 🔓 Do you see my data or my queries?
 
-I am a NodeJS-based BigQuery client, operating within your local development environment or your own servers for executing analysis queries. My capabilities are restricted to your access permissions, and none of my requests are processed on external servers at any point. Everything works only on your machine or server. For future billing purpose, I do collect some basics statistics, here the [list](https://biqguery.com/privacy#statistics).
+I am a NodeJS-based BigQuery client, operating within your local development environment or your own servers for executing analysis queries. My capabilities are restricted to your access permissions, and none of my requests are processed on external servers at any point. Everything works only on your machine or server. For future billing purpose, I do collect some basics statistics, here the [list](https://biq.blue/privacy#statistics).
