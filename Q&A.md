@@ -14,7 +14,7 @@ Nevertheless, it is essential to acknowledge that this user-friendly nature carr
 
 Currently, I am in an open BETA stage of development. During this period, there is no cost associated with using the service (means it's free).
 
-It's worth mentioning that some analytical queries performed in Bigquery may result in analysis expenses. These expenses typically make up less than 0.1% of the total Bigquery bill.
+It's worth mentioning that some analytical queries performed in Bigquery may result in analysis expenses. These expenses typically around 1% of the total Bigquery bill.
 
 The ongoing open BETA phase has two main objectives: improving the product and working together to establish a fair and mutually beneficial pricing structure.
 
