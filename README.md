@@ -17,6 +17,10 @@ I am an efficient Google BigQuery explorer dedicated to optimizing costs and per
 
 ## Release note
 
+### v0.3.4 🥕
+
+- Customize analysis and filters using labels
+
 ### v0.3.1 🍅
 
 - Add a webhook to receive notifications on any system (Slack, Teams, email, ...), see [documentation](https://hub.docker.com/r/biqblue/biqblue)
