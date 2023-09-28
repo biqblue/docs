@@ -17,6 +17,10 @@ I am an efficient Google BigQuery explorer dedicated to optimizing costs and per
 
 ## Release note
 
+### v0.3.5 🥦
+
+- Fix urls, filters, brwoser back button and deeplinks
+
 ### v0.3.4 🥕
 
 - Customize analysis and filters using labels
