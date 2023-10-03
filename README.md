@@ -17,6 +17,13 @@ I am an efficient Google BigQuery explorer dedicated to optimizing costs and per
 
 ## Release note
 
+### v0.3.8 🫑
+
+- Add time travel bytes to storage analysis
+- Fix table explorer
+- Add table reference filter
+- Add `query LIKE "%...%"` filter
+
 ### v0.3.5 🥦
 
 - Fix urls, filters, brwoser back button and deeplinks
