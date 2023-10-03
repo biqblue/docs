@@ -17,7 +17,7 @@ I am an efficient Google BigQuery explorer dedicated to optimizing costs and per
 
 ## Release note
 
-### v0.3.8 🫑
+### v0.3.8 🥑
 
 - Add time travel bytes to storage analysis
 - Fix table explorer
