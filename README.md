@@ -17,6 +17,11 @@ I am an efficient Google BigQuery explorer dedicated to optimizing costs and per
 
 ## Release note
 
+### v0.3.12 🍄
+
+- Fix first time launch
+- Setup has been improved 🤞
+
 ### v0.3.8 🥑
 
 - Add time travel bytes to storage analysis
