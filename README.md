@@ -17,6 +17,10 @@ I am an efficient Google BigQuery explorer dedicated to optimizing costs and per
 
 ## Release note
 
+### v0.3.17 🌽
+
+- Add all supported Bigquery [locations](https://cloud.google.com/bigquery/docs/locations#supported_locations)
+
 ### v0.3.12 🍄
 
 - Fix first time launch
