@@ -41,5 +41,7 @@
 		}
 	],
 	"project": "",
-	"dataset": ""
+	"dataset": "",
+	"labels": [],
+	"cron": "",
 }
