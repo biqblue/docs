@@ -17,6 +17,12 @@ I am an efficient Google BigQuery explorer dedicated to optimizing costs and per
 
 ## Release note
 
+### v0.3.21 🥬
+
+- Improve setup (can configure temporary vs permanent table from setup)
+- Deactivate automatic update by default
+- Fix
+
 ### v0.3.17 🌽
 
 - Add all supported Bigquery [locations](https://cloud.google.com/bigquery/docs/locations#supported_locations)
