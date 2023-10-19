@@ -56,5 +56,7 @@ When it is done, simply restart the app 👍.
 
 By default, Biq create a configuration file in `~/.biq/config.json`. You can play with it, but in case of problem just delete it and restart.
 
+#### GCP Pricing
 
+Price are configured in `config.json`, you can customize them using this [documentation](https://cloud.google.com/skus).
 
