@@ -11,11 +11,11 @@ First, download your binaries on [biqguery.com](https://biqguery.com#download).
 - You need to [unrestrict the ExecutionPolicy](https://learn.microsoft.com/fr-fr/troubleshoot/azure/active-directory/cannot-run-scripts-powershell)
 - On Windows 11, you may need to "unblock" the app
 
-Your web browser should open the setup page.
+### Setup
 
-<img width="1207" alt="263542524-eabfe531-f723-4349-b88a-ff80895eb0c1" src="https://github.com/biqguery/docs/assets/134798784/e39074c6-eb3d-4c1c-a87a-eb8914d09d65">
+Your web browser should open the [setup](http://127.0.0.1:3000/setup.html) page.
 
-### Requirements
+<img width="1063" alt="Screenshot 2023-10-19 at 15 20 42" src="https://github.com/biqblue/docs/assets/134798784/5cbf86a9-1aca-4564-bf0a-f85ea74a29a4">
 
 Install and setup all the requirements:
 - Install gcloud cli
@@ -31,18 +31,30 @@ IAM Roles you need:
 - roles/bigquery.user
 ```
 
-#### Using a service account
+### Options
 
-Simply set the environemnt variable `GOOGLE_APPLICATION_CREDENTIALS` to the path to your service-account json file.
+Biq Blue copy `JOBS` and `TABLES` rows from `INFORMATION_SCHEMA` in all available projects.
+
+#### Temporary tables
+
+By default, Biq uses temporary tables. This is the simplest way to start but the downside is that tables expire after 24 hours.
+
+#### Permanent tables
+
+If you use Biq Blue every day you should consider the option of creating a dataset just for it: Biq will create tables in this dataset with 3 main benefits:
+- tables never expired and Biq will only copy the latest rows from `INFORMATION_SCHEMA` into these tables
+- tables can be shared for your own queries or dashboard if needed (API)
+- you can activate the automatic hourly update to always have fresh data
+
+<img width="1062" alt="Screenshot 2023-10-19 at 15 29 05" src="https://github.com/biqblue/docs/assets/134798784/48e9df2b-63b6-412b-b32f-93557eb352e1">
 
 ### Restart
 
-When it is done, restart the app, and you should see 3 green ✔️, meaning you're good to go! 🥳
+When it is done, simply restart the app 👍.
 
-### Advanced setup (optional)
+### Advanced setup
 
-Go to [advanced setup](https://github.com/biqguery/docs/blob/main/ADVANCED_SETUP.md).
-
+By default, Biq create a configuration file in `~/.biq/config.json`. You can play with it, but in case of problem just delete it and restart.
 
 
 
