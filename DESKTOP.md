@@ -33,7 +33,7 @@ IAM Roles you need:
 
 ### Options
 
-Biq Blue copy `JOBS` and `TABLES` rows from `INFORMATION_SCHEMA` in all available projects.
+Biq Blue copy `JOBS` and `TABLES` rows from `INFORMATION_SCHEMA` of all available projects.
 
 #### Temporary tables
 
