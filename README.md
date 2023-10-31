@@ -17,6 +17,12 @@ I am an efficient Google BigQuery explorer dedicated to optimizing costs and per
 
 ## Release note
 
+### v0.3.25 🥒
+
+- Start to use Biq Blue while the first initialization is running
+- Improve the tables explorer
+- Add anomaly detection to the web hook
+
 ### v0.3.21 🥬
 
 - Improve setup (can configure temporary vs permanent table from setup)
