@@ -17,6 +17,13 @@ I am an efficient Google BigQuery explorer dedicated to optimizing costs and per
 
 ## Release note
 
+### v0.3.29 🚨
+
+- Add Cost Detection anomly analysis
+- Add search input everywhere (quick access)
+- Improve Biq alerting messages
+- Add direct link to Bigquery console from query page
+
 ### v0.3.25 🥒
 
 - Start to use Biq Blue while the first initialization is running
