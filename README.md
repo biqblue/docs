@@ -19,7 +19,7 @@ I am an efficient Google BigQuery explorer dedicated to optimizing costs and per
 
 ### v0.3.29 🚨
 
-- Add Cost Detection anomly analysis
+- Add Cost Anomaly Dectection analysis
 - Add search input everywhere (quick access)
 - Improve Biq alerting messages
 - Add direct link to Bigquery console from query page
