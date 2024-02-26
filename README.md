@@ -17,6 +17,10 @@ I am an efficient Google BigQuery explorer dedicated to optimizing costs and per
 
 ## Release note
 
+### v0.3.33 🚨🚨
+
+- Add weekly alerting: the 3 most expensive queries
+
 ### v0.3.29 🚨
 
 - Add Cost Anomaly Detection analysis
