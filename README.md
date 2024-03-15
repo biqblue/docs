@@ -17,6 +17,10 @@ I am an efficient Google BigQuery explorer dedicated to optimizing costs and per
 
 ## Release note
 
+### v0.3.38 📅
+
+- Add automatic granularity for compute analysis charts: hour, day, month
+
 ### v0.3.33 🚨🚨
 
 - Add weekly alerting: the 3 most expensive queries
