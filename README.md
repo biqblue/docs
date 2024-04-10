@@ -17,6 +17,12 @@ I am an efficient Google BigQuery explorer dedicated to optimizing costs and per
 
 ## Release note
 
+### v1.1.1 🚀
+
+- new savings analysis
+- direct link to GCP web console for jobs, tables and datasets
+- many little improvements
+
 ### v0.3.38 📅
 
 - Add automatic granularity for compute analysis charts: hour, day, month
