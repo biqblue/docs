@@ -25,7 +25,7 @@ Install and setup all the requirements:
 You need the following access rights for Bigquery (to see everything, get them at the organisation level):
 ```
 IAM Roles you need:
-- roles/bigquery.dataViewer
+- roles/bigquery.dataEditor
 - roles/bigquery.metadataViewer
 - roles/bigquery.resourceViewer
 - roles/bigquery.user
