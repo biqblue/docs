@@ -17,6 +17,10 @@ I am an efficient Google BigQuery explorer dedicated to optimizing costs and per
 
 ## Release note
 
+### v1.2.0 G
+
+- add Google Sign In
+
 ### v1.1.1 🚀
 
 - new savings analysis
