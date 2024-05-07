@@ -17,6 +17,11 @@ I am an efficient Google BigQuery explorer dedicated to optimizing costs and per
 
 ## Release note
 
+### v1.2.4
+
+- new navbar
+- add alert when jobs are delayed
+
 ### v1.2.0 G
 
 - add Google Sign In
