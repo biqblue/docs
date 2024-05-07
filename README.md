@@ -4,12 +4,9 @@
 
 I am an efficient Google BigQuery explorer dedicated to optimizing costs and performance, showing you where to start, what to change and how to do it.
 
-🖐️ The easiest way to try is probably to use the desktop version. If you're a Bigquery developer, you've already installed gcloud or a service account.
-
 ## Quick start
-- You want to install the MacOS, Windows or Linux version? Then go to the [desktop version setup](https://github.com/biqblue/docs/blob/main/DESKTOP.md)
-- You want to install the Docker version? Then go to [Docker Hub](https://hub.docker.com/r/biqblue/biqblue)
-- You have questions? Then go to [Q&A](https://github.com/biqblue/docs/blob/main/Q%26A.md).
+
+- Follow this [tutorial](https://biq.blue/blog/quickstart/a-step-by-step-tutorial-to-use-biq-blue-as-a-service) to get your `https://your-company.biq.blue` link
 
 ## Screenshots
 
