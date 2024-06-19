@@ -14,6 +14,11 @@ I am an efficient Google BigQuery explorer dedicated to optimizing costs and per
 
 ## Release note
 
+### v1.2.9
+
+- add query lag in analyis
+- add link to gcp slot quota dashboard in lag alerts
+
 ### v1.2.4
 
 - new navbar
