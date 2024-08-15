@@ -14,6 +14,10 @@ I am an efficient Google BigQuery explorer dedicated to optimizing costs and per
 
 ## Release note
 
+### v1.2.13
+
+- fix reservation analysis
+
 ### v1.2.9
 
 - add query lag in analyis
