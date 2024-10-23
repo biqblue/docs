@@ -14,6 +14,16 @@ I am an efficient Google BigQuery explorer dedicated to optimizing costs and per
 
 ## Release note
 
+### v1.2.18
+
+- reservation: “VS On-Demand cost” column added to measure efficiency of reservation versus on-demand
+- bi-engine: number of errors and % added
+- anomaly detection: fixed to work only on on-demand projects, not on reservations
+
+### v1.2.15
+
+- add bi-engine analysis
+  
 ### v1.2.13
 
 - fix reservation analysis
