@@ -22,6 +22,8 @@ Install dependencies:
 - google-cloud-bigquery
 
 ```sh
+virtualenv <env>
+source <env>/bin/activate
 python index.py
 ```
 
