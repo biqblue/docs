@@ -13,17 +13,20 @@ bigquery_on_demand = bigquery.Client(project=os.getenv("ON_DEMAND_PROJECT_ID"))
 bigquery_reservation = bigquery.Client(project=os.getenv("RESERVATION_PROJECT_ID"))
 
 async def run_query(query):
-    pick_result = await pick.get_from_query(query)  # Obtient la cible
+
+    # choose the project based on the pick result
+    pick_result = await pick.get_from_query(query)
     target = bigquery_reservation if pick_result == "RESERVATION" else bigquery_on_demand
     
     job = target.query(query, job_config=bigquery.QueryJobConfig(use_query_cache=False))
-    result = job.result()  # Attend que la requête se termine
+    result = job.result()
 
-    job2 = target.get_job(job.job_id)  # Récupère les dernières métadonnées
+    # One the query is done, update the pick
+    job2 = target.get_job(job.job_id) # get the last metadata
     job2.total_slot_ms = sum([stage.slot_ms for stage in job2.query_plan]) if job2.query_plan else "N/A"
     print(f"{pick_result} : totalSlotMs: {job2.total_slot_ms}, totalBytesProcessed: {job2.total_bytes_processed}, query: {query}")
-    await pick.update_from_query(query, job2)  # Met à jour pick
-
+    await pick.update_from_query(query, job2)
+    
 async def main():
     queries = [
         'select "hello";',
