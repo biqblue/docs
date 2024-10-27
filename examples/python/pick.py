@@ -46,12 +46,25 @@ async def update_from_hash(hash, job):
     if not job.job_id:
         print(f"[pick.biq.blue] No job id for {hash}")
     else:
+        print('payload:')
+        print({
+            "hash": hash,
+            "job_id": job.job_id,
+            "creation_time": int(job.created.timestamp() * 1000),
+            "start_time": int(job.started.timestamp() * 1000),
+            "end_time": int(job.ended.timestamp() * 1000),
+            "total_slot_ms": job.total_slot_ms,
+            "total_bytes_billed": job.total_bytes_billed,
+            "total_bytes_processed": job.total_bytes_processed,
+            "bi_engine_mode": getattr(job, "bi_engine_statistics", {}).get("bi_engine_mode", None),
+            "reservation_id": None,
+        })
         await write_query({
             "hash": hash,
             "job_id": job.job_id,
-            "creation_time": job.created.isoformat(),
-            "start_time": job.started.isoformat(),
-            "end_time": job.ended.isoformat(),
+            "creation_time": str(int(job.created.timestamp() * 1000)),
+            "start_time": str(int(job.started.timestamp() * 1000)),
+            "end_time": str(int(job.ended.timestamp() * 1000)),
             "total_slot_ms": job.total_slot_ms,
             "total_bytes_billed": job.total_bytes_billed,
             "total_bytes_processed": job.total_bytes_processed,
