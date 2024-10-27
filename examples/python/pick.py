@@ -46,12 +46,12 @@ async def update_from_hash(hash, job):
     if not job.job_id:
         print(f"[pick.biq.blue] No job id for {hash}")
     else:
-        write_query({
+        await write_query({
             "hash": hash,
             "job_id": job.job_id,
-            "creation_time": job.created,
-            "start_time": job.started,
-            "end_time": job.ended,
+            "creation_time": job.created.isoformat(),
+            "start_time": job.started.isoformat(),
+            "end_time": job.ended.isoformat(),
             "total_slot_ms": job.total_slot_ms,
             "total_bytes_billed": job.total_bytes_billed,
             "total_bytes_processed": job.total_bytes_processed,
