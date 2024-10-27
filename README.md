@@ -14,6 +14,12 @@ I am an efficient Google BigQuery explorer dedicated to optimizing costs and per
 
 ## Release note
 
+### v1.2.19
+
+- jobs analysis: add average used slots and % of distinct query
+- bi-engine analysis: add link to cloud monitoring for bi-engine memory usage
+- reservation analysis: add link to cloud monitoring for used slots
+
 ### v1.2.18
 
 - reservation: “VS On-Demand cost” column added to measure efficiency of reservation versus on-demand
