@@ -27,6 +27,8 @@ source <env>/bin/activate
 python index.py
 ```
 
+Start it twice to see the query runs into the reservation the second time.
+
 ## How to implement Pick API in your project?
 
 Add `pick.py` file to your project, then you have to call 2 methods.
