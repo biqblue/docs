@@ -14,6 +14,11 @@ async function callPickApi(path, body) {
       },
       body: JSON.stringify(body),
     });
+    
+    if (response.status >= 400) {
+      throw new Error(`HTTP ${response.status} ${response.statusText}`);
+    }
+    
     return response.json();
   } catch (e) {
     console.log(`[pick.biq.blue] Error ${e.message} at ${path}`);

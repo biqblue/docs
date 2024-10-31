@@ -14,6 +14,11 @@ async function callPickApi<T>(path: string, body: any): Promise<T | null> {
       },
       body: JSON.stringify(body),
     });
+
+    if (response.status >= 400) {
+      throw new Error(`HTTP ${response.status} ${response.statusText}`);
+    }
+    
     return response.json();
   } catch (e: any) {
     console.log(`[pick.biq.blue] Error ${e.message} at ${path}`);
