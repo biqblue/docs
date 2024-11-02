@@ -14,7 +14,7 @@ async function callPickApi(path, body) {
       },
       body: JSON.stringify(body),
     });
-    
+
     if (response.status >= 400) {
       throw new Error(`HTTP ${response.status} ${response.statusText}`);
     }
@@ -62,7 +62,7 @@ async function updateFromHash(hash, job) {
       total_slot_ms: job.metadata.statistics.totalSlotMs,
       total_bytes_billed: job.metadata.statistics.query.totalBytesBilled,
       total_bytes_processed: job.metadata.statistics.query.totalBytesProcessed,
-      bi_engine_mode: job.metadata.statistics.query.biEngineStatistics ? job.metadata.statistics.query.biEngineStatistics.biEngineMode : null,
+      bi_engine_mode: job.metadata.statistics.query.biEngineStatistics ? job.metadata.statistics.query.biEngineStatistics.biEngineMode : '',
       reservation_id: null,
     });
   }
