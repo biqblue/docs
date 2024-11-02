@@ -2,7 +2,6 @@
 
 Pick is an API that helps determine whether your query should run in an On-Semand project or in a Slot Reservation project. To get the big picture, follow this [tutorial](http://biq.blue/blog/compute/how-to-implement-bigquery-autoscaling-reservation-in-10-minutes).
 
-
 ## How to run this example project?
 
 ### Create .ENV
