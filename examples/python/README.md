@@ -1,19 +1,24 @@
 # PICK BLUE
 
-Pick is an API to simply know if you should run your query in an on-demand project or in a slot reservation project.
+Pick is an API that helps determine whether your query should run in an On-Semand project or in a Slot Reservation project. To get the big picture, follow this [tutorial](http://biq.blue/blog/compute/how-to-implement-bigquery-autoscaling-reservation-in-10-minutes).
 
 ## How to run this example project?
 
-### .ENV
+### Create .ENV
 
 Add a `.ENV` file at the root of the project:
 
 ```sh
 PICK_API_URL=https://pick.biq.blue
 PICK_API_KEY=<YOUR_API_KEY>
-ON_DEMAND_PROJECT_ID=<YOUR_ON-DEMAND_PROJECT_ID>
-RESERVATION_PROJECT_ID=<YOUR_RESERVATION_PROJECT_ID>
+ON_DEMAND_KEY_FILE=<PATH TO THE SERVICE-ACCOUNT.JSON FOR YOUR ON-DEMAND PROJECT>
+RESERVATION_KEY_FILE=<PATH TO THE SERVICE-ACCOUNT.JSON FOR YOUR AUTOSCALING PROJECT>
+REGION=<YOUR REGION (can be: us/eu/europe-west1/...)>
 ```
+
+### Modify query.sql
+
+The `query.sql` file contains the test query. Choose a query in Biq Blue that is currently running On-Demand but would be more cost-effective in a Slot Reservation. Copy this query into `query.sql`.
 
 ### Start
 
@@ -51,6 +56,6 @@ Send metadata to pick.
 result = job.result()  # wait for the end
 
 if job.job_id:
-    job = target.get_job(job.job_id)  # get last metadata
-    await pick.update_from_query(query, job)  # update pick
+    job2 = target.get_job(job.job_id)  # get last metadata
+    await pick.update_from_query(query, job2)  # update pick
 ```

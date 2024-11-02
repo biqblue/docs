@@ -52,7 +52,7 @@ async def update_from_hash(hash, job):
             "total_slot_ms": job.total_slot_ms,
             "total_bytes_billed": job.total_bytes_billed,
             "total_bytes_processed": job.total_bytes_processed,
-            "bi_engine_mode": getattr(job, "bi_engine_statistics", {}).get("bi_engine_mode", None),
+            "bi_engine_mode": getattr(job, "bi_engine_statistics", {}).get("bi_engine_mode", ''),
             "reservation_id": None,
         })
 
