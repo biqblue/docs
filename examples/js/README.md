@@ -19,7 +19,7 @@ REGION=<YOUR REGION (can be: us/eu/europe-west1/...)>
 
 ### Modify query.sql
 
-The file `query.sql` contains the query to test: Select a query in Biq Blue that is running On-Demand and that should run in a Slot Reservation to be cheaper.
+The `query.sql` file contains the test query. Choose a query in Biq Blue that is currently running On-Demand but would be more cost-effective in a Slot Reservation. Copy this query into `query.sql`.
 
 ### Start
 

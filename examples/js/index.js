@@ -11,8 +11,9 @@ const pick = require("./pick");
 
 async function runQuery(query) {
 
+  // ask Pick API which project to use
   const pickResult = await pick.getFromQuery(query);
-  const target = pickResult === "RESERVATION" ? bigqueryReservation : bigqueryOnDemand; // choose which project to use
+  const target = pickResult === "RESERVATION" ? bigqueryReservation : bigqueryOnDemand;
 
   console.log('Checking configuration...');
   console.log('- OnDemand project_id:', await bigqueryOnDemand.getProjectId(), `(${process.env.ON_DEMAND_KEY_FILE})`);
