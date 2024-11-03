@@ -14,6 +14,14 @@ I am an efficient Google BigQuery explorer dedicated to optimizing costs and per
 
 ## Release note
 
+### 1.3.1
+
+- Improve Savings Analysis
+- Settings: Add a test button for Slack to check if integration is working
+- Settings: Add Pick apikey
+- Reservations: Add a link to queries cheaper to run in a reservation
+- Looker: add direct link to dashboard from looker tab in Jobs Analysis
+
 ### v1.2.19
 
 - jobs analysis: add average used slots and % of distinct query
